@@ -46,3 +46,67 @@ header nav a:hover{
     background: #8f35e2;
     transform: translate(-2px, -2px);
 }
+
+main{
+    height: 500px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+
+    background: var(--color-main_background);
+}
+
+@keyframes tremer{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(5deg) translate(10px, 10px);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+main>.main_images>img{
+    width: 300px;
+    height: 300px;
+
+    animation: tremer 2s infinite;
+}
+
+main .main_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+    transition: 0.5s ease-in-out;
+}
+
+.main_text:hover{
+    transform: rotate(2deg);
+}
+
+.main_text h1{
+    width: 700px;
+
+    font-size: 50px;
+    font-weight: 500;
+
+    line-height: 120%;
+
+    color: var(--color-text);
+}
+
+.main_text p{
+    font-size: 16px;
+    font-weight: 500;
+
+    color: rgb(161, 154, 154);
+}
