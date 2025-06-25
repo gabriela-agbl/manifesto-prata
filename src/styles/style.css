@@ -1,5 +1,6 @@
 @import url("./global.css");
 
+/* --------------------------------------HEADER-------------------------------------- */
 header{
     width: 100%;
     height: 90px;
@@ -46,7 +47,7 @@ header nav a:hover{
     background: #8f35e2;
     transform: translate(-2px, -2px);
 }
-
+/* --------------------------------------MAIN-------------------------------------- */
 main{
     height: 500px;
 
@@ -110,7 +111,7 @@ main .main_text{
 
     color: rgb(161, 154, 154);
 }
-
+/* --------------------------------------PRESENTATION-------------------------------------- */
 .presentation_content{
     display: flex;
     flex-direction: column;
@@ -186,4 +187,86 @@ main .main_text{
     font-weight: 500;
 
     color: var(--color-action);
+}
+/* --------------------------------------POOL-------------------------------------- */
+.pool_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    padding-top: 120px;
+    padding-bottom: 50px;
+    
+
+    background: var(--color-other_background);
+}
+
+.pool_content h2{
+    font-size: 36px;
+    font-weight: 500;
+
+    color: var(--color-text);
+}
+.pool_boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.pool_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.pool_box h3{
+    font-size: 30px;
+    font-weight: 400;
+
+    color: var(--color-details);
+
+    padding: 6px 32px;
+
+    background: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.pool_box>.box_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_text>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.box_text>ul>li{
+    display: none;
+
+    font-size: 24px;
+    font-weight: 400;
+
+    list-style-type: none;
+
+    color: black;
+
+    padding: 6px 32px;
+
+    background: white;
+
+    border-radius: 50px;
 }
