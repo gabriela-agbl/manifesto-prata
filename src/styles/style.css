@@ -284,6 +284,8 @@ main .main_text{
 .plan_content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 54px;
 
     padding-top: 70px;
@@ -301,6 +303,8 @@ main .main_text{
 }
 
 .plan_content>.before_plan{
+    width: 1200px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,4 +342,64 @@ main .main_text{
     list-style-type: none;
 
     color: black;
+}
+
+.plan_content>.current_plan{
+    width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 24px 200px;
+
+    background: white;
+
+    border-radius: 50px;
+
+    box-shadow: 0px 5px 10px 0px rgba(47, 70, 221, 0.972);
+}
+
+.current_plan h3{
+    font-size: 24px;
+    font-weight: 500;
+
+    color: black;
+}
+
+.current_text>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.current_text>ul>li{
+    font-size: 18px;
+    font-weight: 400;
+
+    list-style-type: none;
+
+    color: black;
+}
+
+.plan_content>.champion_plan{
+    width: 1800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16px;
+
+    padding: 24px 200px;
+
+    background: var(--color-modern);
+
+    border-radius: 50px;
+
+    box-shadow: 0px 5px 10px 0px rgba(47, 70, 221, 0.972);
 }
