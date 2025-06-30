@@ -289,6 +289,7 @@ main .main_text{
     gap: 54px;
 
     padding-top: 70px;
+    padding-bottom: 70px;
 
     background: var(--color-other_background);
 }
@@ -521,3 +522,119 @@ main .main_text{
     color: var(--color-action);
 }
 
+.after-match_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 20px;
+}
+
+.after-match_content h2{
+    font-size: 36px;
+    font-weight: 500;
+
+    color: black;
+}
+
+.after-match_content>.after_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.after_text>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+
+    padding: 24px 32px;
+    padding-right: 90px;
+
+    background: var(--color-text);
+
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.after_text>ul:hover{
+    transform: scale(1.1);
+}
+
+.after_text>ul>li{
+    font-size: 24px;
+    font-weight: 400;
+
+    list-style-type: none;
+
+    color: var(--color-details);
+}
+
+.after_text>.after_notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 20px;
+
+    background: var(--color-text);
+    border-radius: 30px;
+}
+
+.after_notes p{
+    font-size: 24px;
+    font-weight: 500;
+
+    color: black;
+}
+
+.after_notes>.images_note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.after_notes>.images_note>img{
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.after_notes>.images_note>img:hover{
+    transform: translateY(-5px);
+}
+
+@keyframes flutuar_text{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateY(-5px);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.after_text h4{
+    font-size: 24px;
+    font-weight: 400;
+
+    color: black;
+
+    animation: flutuar_text 2s infinite;
+}
