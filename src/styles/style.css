@@ -390,9 +390,8 @@ main .main_text{
     width: 1800px;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     gap: 16px;
 
     padding: 24px 200px;
@@ -404,12 +403,49 @@ main .main_text{
     box-shadow: 0px 5px 10px 0px rgba(47, 70, 221, 0.972);
 }
 
+@keyframes flutuar_champion{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateY(-5px);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.champion_plan>img{
+    width: 400px;
+    height: 500px;
+
+    animation: flutuar_champion 3s infinite;
+}
+
+@keyframes flutuar{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateY(-5px);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
 .champion_plan>.champion_text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
+
+    animation: flutuar 2s infinite;
 }
 
 .champion_plan>.champion_text h3{
