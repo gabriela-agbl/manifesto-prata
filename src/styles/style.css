@@ -450,7 +450,7 @@ main .main_text{
 }
 
 .champion_plan>.champion_text h3{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
 
     color: black;
@@ -521,7 +521,7 @@ main .main_text{
 
     color: var(--color-action);
 }
-
+/* --------------------------------------AFTER MATCH-------------------------------------- */
 .after-match_content{
     display: flex;
     flex-direction: column;
