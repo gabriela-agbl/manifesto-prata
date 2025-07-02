@@ -527,16 +527,19 @@ main .main_text{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 50px;
 
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    background: var(--color-other_background);
 }
 
 .after-match_content h2{
     font-size: 36px;
     font-weight: 500;
 
-    color: black;
+    color: var(--color-text);
 }
 
 .after-match_content>.after_text{
@@ -634,7 +637,57 @@ main .main_text{
     font-size: 24px;
     font-weight: 400;
 
-    color: black;
+    color: var(--color-text);
 
     animation: flutuar_text 2s infinite;
+}
+/* --------------------------------------FOOTER-------------------------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding-top: 20px;
+
+    background: var(--color-main_background);
+}
+
+footer h2{
+    font-size: 36px;
+    font-weight: 500;
+
+    color: var(--color-text);
+}
+
+footer>.footer_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+footer>nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+footer>nav>a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--color-text);
+}
+
+footer>nav>a>img{
+    width: 35px;
+    height: 35px;
 }
