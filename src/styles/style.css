@@ -647,7 +647,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 50px;
 
     padding-top: 20px;
 
@@ -665,7 +665,28 @@ footer>.footer_images{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 50px;
+}
+
+@keyframes balancar{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: rotate(8deg);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.footer_images>img{
+    width: 120px;
+    height: 120px;
+
+    animation: balancar 3s infinite;
 }
 
 footer>nav{
