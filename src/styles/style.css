@@ -720,6 +720,10 @@ footer>nav>a>img{
 }
 /* -------------------------------------- MOBILE RESPONSIVENESS -------------------------------------- */
 @media screen and (max-width: 1800px) {
+  html, body{
+    overflow-x: hidden;
+  }
+
   header {
     flex-direction: column;
     align-items: center;
