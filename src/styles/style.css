@@ -718,3 +718,99 @@ footer>nav>a>img{
     width: 45px;
     height: 45px;
 }
+/* -------------------------------------- MOBILE RESPONSIVENESS -------------------------------------- */
+@media screen and (max-width: 1800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+    height: auto;
+    text-align: center;
+  }
+
+  .main_text h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .main_text p {
+    font-size: 16px;
+  }
+
+  .main_images img {
+    width: 80%;
+    height: auto;
+  }
+
+  .presentation_boxes,
+  .pool_boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #small_box{
+    width: 90%; 
+    height: auto;
+    position: static;
+  }
+
+  .presentation_box,
+  .pool_box {
+    width: 90%;
+  }
+
+  .plan_content > .before_plan,
+  .plan_content > .current_plan,
+  .plan_content > .champion_plan {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 24px 16px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .champion_plan > img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .champion_text {
+    align-items: center;
+    animation: none;
+  }
+
+  .after_text > ul {
+    align-items: center;
+    padding: 24px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_images {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  footer nav {
+    flex-direction: row;
+  }
+}
