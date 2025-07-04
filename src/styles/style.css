@@ -720,7 +720,7 @@ footer>nav>a>img{
 }
 /* -------------------------------------- MOBILE RESPONSIVENESS -------------------------------------- */
 @media screen and (max-width: 1800px) {
-  html, body{
+  body{
     overflow-x: hidden;
   }
 
