@@ -1,5 +1,9 @@
 @import url("./global.css");
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* --------------------------------------HEADER-------------------------------------- */
 header{
     width: 100%;
@@ -12,6 +16,12 @@ header{
     padding: 0 20px;
 
     background: linear-gradient(145deg, #6322ad, #29297b);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 9999;
 }
 
 header p{
