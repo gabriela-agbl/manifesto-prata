@@ -74,6 +74,27 @@ header .menu_toggle span{
 
     background-color: black;
 }
+
+header button{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+
+    color: white;
+
+    padding: 5px 20px;
+
+    background-color: var(--color-action);
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header button:hover{
+    background-color: #8f35e2;
+    transform: translate(-2px, -2px);
+}
 /* --------------------------------------MAIN-------------------------------------- */
 main{
     height: 500px;
