@@ -57,6 +57,23 @@ header nav a:hover{
     background: #8f35e2;
     transform: translate(-2px, -2px);
 }
+
+header .menu_toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    cursor: pointer;
+}
+
+header .menu_toggle span{
+    width: 30px;
+    height: 3px;
+
+    background-color: black;
+}
 /* --------------------------------------MAIN-------------------------------------- */
 main{
     height: 500px;
@@ -719,22 +736,17 @@ footer>nav>a>img{
     height: 45px;
 }
 /* -------------------------------------- MOBILE RESPONSIVENESS -------------------------------------- */
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 480px) {
   body{
     overflow-x: hidden;
   }
 
-  header {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 16px;
-    gap: 12px;
+  header nav {
+    display: none;
   }
 
-  header nav {
-    flex-direction: column;
-    gap: 8px;
+  header .menu_toggle{
+    display: flex;
   }
 
   main {
@@ -746,7 +758,7 @@ footer>nav>a>img{
   }
 
   .main_text h1 {
-    font-size: 28px;
+    font-size: 26px;
     width: 100%;
   }
 
