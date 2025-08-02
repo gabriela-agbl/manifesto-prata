@@ -15,5 +15,9 @@ $(document).ready(function(){
         } else {
             $(this).text('Modo Claro');
         }
+    }),
+
+    $('.menu_toggle').click(function(){
+        $('.menu_toggle nav').slideToggle();
     })
 });
